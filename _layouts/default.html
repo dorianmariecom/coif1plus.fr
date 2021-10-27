@@ -10,23 +10,70 @@
       media="all"
     />
     <style>
+      html {
+        --blue-600: rgb(37, 99, 235);
+        --blue-700: rgb(29, 78, 216);
+        --blue-800: rgb(30, 64, 175);
+      }
+
+
       a {
         text-decoration: underline;
       }
+
       p {
         margin-bottom: 1rem;
       }
+
+      .button {
+        text-decoration: none;
+        background-color: var(--blue-600);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        display: inline-block;
+      }
+
+      .button:hover {
+        background-color: var(--blue-700);
+      }
+
+      .button:focus {
+        background-color: var(--blue-800);
+      }
     </style>
   </head>
-  <body class="max-w-sm mx-auto p-4">
-    <p>
-      <b>
-        <a href="/">Salon 1+Diffusion</a>
-      </b>
+  <body class="mx-auto max-w-4xl p-4 pt-16">
+    <p class="text-center text-4xl font-bold text-blue-500">
+      💇‍♂️
+      <a href="/">Salon 1+Diffusion</a>
+      💇‍♀️
     </p>
+    <p class="text-center text-2xl font-bold text-gray-500">
+      📞
+      <a href="tel:0344701760">03 44 70 17 60</a>
+    </p>
+    <p class="text-center text-2xl text-gray-500">
+      <a href="https://goo.gl/maps/WFHitEd1thkxqwxL7">
+        23 rue Charles Lescot
+        <br />
+        60700 Pont-Sainte-Maxence
+      </a>
+    </p>
+    <p class="text-center text-2xl text-gray-500 mb-16">
+      Du <b>mardi au vendredi</b> de <b>9h à 18h30</b>, et le <b>samedi</b> de
+      <b>8h à 17h.</b>
+    </p>
+    {% if page.url != "/" %}
     <p>
       <b>{{ page.title }}</b>
     </p>
+    {% endif %}
+
     {{ content }}
+
+    <p class="text-center">Fait par <a href="https://dorianmarie.fr">Dorian</a></p>
+    <p class="text-center"><a href="/mentions-legales">Mentions légales</a></p>
   </body>
 </html>
