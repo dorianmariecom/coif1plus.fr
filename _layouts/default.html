@@ -45,26 +45,33 @@
     </style>
   </head>
   <body class="mx-auto max-w-4xl p-4 pt-16">
-    <p class="text-center text-4xl font-bold text-blue-500">
-      💇‍♂️
-      <a href="/">Salon 1+Diffusion</a>
-      💇‍♀️
-    </p>
-    <p class="text-center text-2xl font-bold text-gray-500">
-      📞
-      <a href="tel:0344701760">03 44 70 17 60</a>
-    </p>
-    <p class="text-center text-2xl text-gray-500">
-      <a href="https://goo.gl/maps/WFHitEd1thkxqwxL7">
-        23 rue Charles Lescot
-        <br />
-        60700 Pont-Sainte-Maxence
+    <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+      <div>
+        <p class="text-center text-4xl font-bold text-blue-500">
+          💇‍♂️
+          <a href="/">Salon 1+Diffusion</a>
+          💇‍♀️
+        </p>
+        <p class="text-center text-2xl font-bold text-gray-500">
+          📞
+          <a href="tel:0344701760">03 44 70 17 60</a>
+        </p>
+        <p class="text-center text-2xl text-gray-500">
+          <a href="https://goo.gl/maps/WFHitEd1thkxqwxL7">
+            23 rue Charles Lescot
+            <br />
+            60700 Pont-Sainte-Maxence
+          </a>
+        </p>
+        <p class="text-center text-2xl text-gray-500 mb-16">
+          Du <b>mardi au vendredi</b> de <b>9h à 18h30</b>, et le <b>samedi</b> de
+          <b>8h à 17h.</b>
+        </p>
+      </div>
+      <a href="/img/front.jpg">
+        <img class="rounded-xl" src="/img/front.jpg" />
       </a>
-    </p>
-    <p class="text-center text-2xl text-gray-500 mb-16">
-      Du <b>mardi au vendredi</b> de <b>9h à 18h30</b>, et le <b>samedi</b> de
-      <b>8h à 17h.</b>
-    </p>
+    </div>
     {% if page.url != "/" %}
     <p>
       <b>{{ page.title }}</b>
@@ -73,7 +80,6 @@
 
     {{ content }}
 
-    <p class="text-center">Fait par <a href="https://dorianmarie.fr">Dorian</a></p>
     <p class="text-center"><a href="/mentions-legales">Mentions légales</a></p>
   </body>
 </html>
