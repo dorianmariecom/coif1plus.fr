@@ -1,2 +1,0 @@
-- simplifier
-- esthétique

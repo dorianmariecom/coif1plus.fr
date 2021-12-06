@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title }}</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-      media="all"
+    <meta
+      name="description"
+      content="Salon 1+Diffusion 💇‍♂️ 💇‍♀️ 📞 03 44 70 17 60. 23 rue Charles Lescot 60700 Pont-Sainte-Maxence. Du mardi au vendredi de 9h à 18h30, et le samedi de 8h à 17h."
     />
+    <title>{{ page.title }}</title>
+    <link href="css/tailwind.min.css" rel="stylesheet" media="all" />
     <style>
       html {
         --blue-600: rgb(37, 99, 235);
         --blue-700: rgb(29, 78, 216);
         --blue-800: rgb(30, 64, 175);
       }
-
 
       a {
         text-decoration: underline;
@@ -47,42 +46,40 @@
   <body class="mx-auto max-w-4xl p-4 pt-16">
     <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
       <div>
-        <p class="text-center text-4xl font-bold text-blue-500">
+        <p class="text-center text-4xl font-bold text-blue-600">
           <a href="/">Salon 1+Diffusion</a>
-          <br>
-          💇‍♂️
-          💇‍♀️
+          <br />
+          💇‍♂️ 💇‍♀️
         </p>
-        <p class="text-center text-2xl font-bold text-gray-500">
+        <p class="text-center text-2xl font-bold text-gray-600">
           📞
           <a href="tel:0344701760">03 44 70 17 60</a>
         </p>
-        <p class="text-center text-2xl text-gray-500">
+        <p class="text-center text-2xl text-gray-600">
           <a href="https://goo.gl/maps/WFHitEd1thkxqwxL7">
             23 rue Charles Lescot
             <br />
             60700 Pont-Sainte-Maxence
           </a>
         </p>
-        <p class="text-center text-2xl text-gray-500 mb-4">
-          Du <b>mardi au vendredi</b> de <b>9h à 18h30</b>, et le <b>samedi</b> de
+        <p class="text-center text-2xl text-gray-600 mb-4">
+          Du <b>mardi au vendredi</b> de <b>9h à 18h30</b>, et le
+          <b>samedi</b> de
           <b>8h à 17h.</b>
         </p>
-        <p class="text-center text-2xl text-yellow-500 mb-16">
+        <p class="text-center text-2xl text-yellow-600 mb-16">
           Offrez des cartes cadeaux
         </p>
       </div>
       <a href="/img/front.jpg">
-        <img class="rounded-xl" src="/img/front.jpg" />
+        <img class="rounded-xl" src="/img/small/front.jpg" alt="Devanture" />
       </a>
     </div>
     {% if page.url != "/" %}
     <p>
       <b>{{ page.title }}</b>
     </p>
-    {% endif %}
-
-    {{ content }}
+    {% endif %} {{ content }}
 
     <p class="text-center"><a href="/mentions-legales">Mentions légales</a></p>
   </body>
