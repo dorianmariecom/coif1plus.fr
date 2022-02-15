@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.thumbnail {
+  @apply rounded-xl object-cover w-full h-80;
+}
