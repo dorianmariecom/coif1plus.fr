@@ -1,9 +1,1 @@
-{
-  "dependencies": {
-    "cssnano": "*",
-    "postcss": "*"
-  },
-  "scripts": {
-    "minify": "postcss css/tailwind.css > css/tailwind.min.css"
-  }
-}
+{}
