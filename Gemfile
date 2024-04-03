@@ -4,7 +4,8 @@ source "https://rubygems.org"
 
 ruby "3.3.0"
 
-gem "jekyll"
-gem "tailwindcss-rails"
 gem "csv" # jekyll
+gem "jekyll"
 gem "rspec"
+gem "tailwindcss-rails"
+gem "rubocop-rails-omakase"
