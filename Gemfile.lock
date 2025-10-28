@@ -241,9 +241,9 @@ GEM
     syntax_tree-xml (0.1.0)
       prettier_print
       syntax_tree (>= 2.0.1)
-    tailwindcss-ruby (4.1.13)
-    tailwindcss-ruby (4.1.13-arm64-darwin)
-    tailwindcss-ruby (4.1.13-x86_64-linux-gnu)
+    tailwindcss-ruby (4.1.16)
+    tailwindcss-ruby (4.1.16-arm64-darwin)
+    tailwindcss-ruby (4.1.16-x86_64-linux-gnu)
     temple (0.10.4)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
