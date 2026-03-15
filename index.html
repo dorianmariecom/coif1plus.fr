@@ -6,12 +6,23 @@ title: 1+Diffusion - Salon de Coiffure à Pont-Sainte-Maxence
 <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
   <div>
     <a href="/img/team.jpg">
-      <img
-        class="rounded-xl"
-        src="/img/small/team.jpg"
-        loading="lazy"
-        alt="Équipe"
-      />
+      <picture>
+        <source
+          srcset="
+            /img/small/team.jpg 320w,
+            /img/medium/team.jpg 480w,
+            /img/team.jpg 621w
+          "
+          sizes="(min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          class="rounded-xl"
+          src="/img/team.jpg"
+          loading="lazy"
+          decoding="async"
+          alt="Équipe"
+        />
+      </picture>
     </a>
   </div>
   <div>
@@ -49,48 +60,90 @@ title: 1+Diffusion - Salon de Coiffure à Pont-Sainte-Maxence
     <p>
       Nous travaillons avec
       <a href="http://www.indola.com/en/home.html">
-        <img
-          class="inline-block"
-          src="/img/indola-logo.png"
-          alt="indola"
-          width="30"
-          loading="lazy"
-          alt="Logo Indola"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/small/indola-logo.png 25w,
+              /img/medium/indola-logo.png 40w,
+              /img/indola-logo.png 50w
+            "
+            sizes="(min-width: 768px) 30px, 24px"
+          />
+          <img
+            class="inline-block"
+            src="/img/indola-logo.png"
+            width="30"
+            loading="lazy"
+            decoding="async"
+            alt="Logo Indola"
+          />
+        </picture>
       </a>
       et
       <a href="https://www.schwarzkopf.fr/">
-        <img
-          class="inline-block"
-          src="/img/schwarzkopf-logo.png"
-          width="50"
-          alt="schwarzkopf"
-          loading="lazy"
-          alt="Logo Schwarzkopf"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/small/schwarzkopf-logo.png 75w,
+              /img/medium/schwarzkopf-logo.png 120w,
+              /img/schwarzkopf-logo.png 150w
+            "
+            sizes="(min-width: 768px) 50px, 40px"
+          />
+          <img
+            class="inline-block"
+            src="/img/schwarzkopf-logo.png"
+            width="50"
+            loading="lazy"
+            decoding="async"
+            alt="Logo Schwarzkopf"
+          />
+        </picture>
       </a>
       <br />
       <b>« Notre priorité c'est vous ! »</b>
     </p>
     <p>
       <a href="https://coiffeurs-justes.com/">
-        <img
-          src="/img/coiffeurs-justes-logo.jpg"
-          width="300"
-          loading="lazy"
-          alt="Logo Coiffeurs Justes"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/small/coiffeurs-justes-logo.jpg 150w,
+              /img/medium/coiffeurs-justes-logo.jpg 220w,
+              /img/coiffeurs-justes-logo.jpg 300w
+            "
+            sizes="(min-width: 768px) 300px, 220px"
+          />
+          <img
+            src="/img/coiffeurs-justes-logo.jpg"
+            width="300"
+            loading="lazy"
+            decoding="async"
+            alt="Logo Coiffeurs Justes"
+          />
+        </picture>
       </a>
     </p>
   </div>
   <div>
     <a href="/img/chairs.jpg">
-      <img
-        class="rounded-xl"
-        src="/img/small/chairs.jpg"
-        loading="lazy"
-        alt="Intérieur"
-      />
+      <picture>
+        <source
+          srcset="
+            /img/small/chairs.jpg 1000w,
+            /img/medium/chairs.jpg 1600w,
+            /img/large/chairs.jpg 2400w
+          "
+          sizes="(min-width: 768px) 50vw, 100vw"
+        />
+        <img
+          class="rounded-xl"
+          src="/img/chairs.jpg"
+          loading="lazy"
+          decoding="async"
+          alt="Intérieur"
+        />
+      </picture>
     </a>
   </div>
 </div>
@@ -110,27 +163,27 @@ title: 1+Diffusion - Salon de Coiffure à Pont-Sainte-Maxence
   <div>
     <p class="font-bold text-2xl">Produits et services</p>
     <ul class="mb-4 list-disc ml-4">
-      <li>Shampooing Coupe Coiffage Femme : 26 €</li>
-      <li>Shampooing Coupe Coiffage Homme : 17 €</li>
-      <li>Shampooing Coiffage Femme : 14 €</li>
-      <li>Shampooing Coupe Coiffage Garçon / Étudiant : 13,60 €</li>
-      <li>Shampooing Coupe Coiffage Fille / Étudiante : 20,80 €</li>
-      <li>Shampooing Coupe Coiffage Fille 5-12 ans : 17 €</li>
-      <li>Coupe Coiffage Enfant -5 ans: 10 €</li>
-      <li>Mèche demi-tête ou balayage court : 31 €</li>
-      <li>Mèche tête entière court : 42 €</li>
-      <li>Mèche cheveux longs : 52 €</li>
-      <li>Couleur court: 22 €</li>
-      <li>Couleur cheveux longs: 31 €</li>
-      <li>Permanente court / mi-long / long: 28 € / 34 € / 47 €</li>
-      <li>Shampooing : 2 €</li>
-      <li>Soin sans rinçage: 4 €</li>
-      <li>Soin massage chaud: 6,50 €</li>
+      <li>Shampooing Coupe Coiffage Femme : 27&nbsp;€</li>
+      <li>Shampooing Coupe Coiffage Homme : 18&nbsp;€</li>
+      <li>Shampooing Coiffage Femme : 15&nbsp;€</li>
+      <li>Shampooing Coupe Coiffage Garçon / Étudiant : 14,40&nbsp;€</li>
+      <li>Shampooing Coupe Coiffage Fille / Étudiante : 21,60&nbsp;€</li>
+      <li>Shampooing Coupe Coiffage Fille 5-12 ans : 18&nbsp;€</li>
+      <li>Coupe Coiffage Enfant -5 ans: 11&nbsp;€</li>
+      <li>Mèche demi-tête ou balayage court : 32&nbsp;€</li>
+      <li>Mèche tête entière court : 43&nbsp;€</li>
+      <li>Mèche cheveux longs : 53&nbsp;€</li>
+      <li>Couleur court: 23&nbsp;€</li>
+      <li>Couleur cheveux longs: 32&nbsp;€</li>
+      <li>Permanente court / mi-long / long: 29&nbsp;€ / 35&nbsp;€ / 48&nbsp;€</li>
+      <li>Shampooing : 2&nbsp;€</li>
+      <li>Soin sans rinçage: 5&nbsp;€</li>
+      <li>Soin massage chaud: 7&nbsp;€</li>
       <li>
-        Soin profond botox Tahe court / mi-long / long : 45 € / 60 € / 75 €
+        Soin profond botox Tahe court / mi-long / long : 45&nbsp;€ / 60&nbsp;€ / 75&nbsp;€
       </li>
-      <li>Chignon : 26-40 €</li>
-      <li>Soin bronzant visage : 5 €</li>
+      <li>Chignon : 27-41&nbsp;€</li>
+      <li>Soin bronzant visage : 5&nbsp;€</li>
     </ul>
   </div>
 </div>

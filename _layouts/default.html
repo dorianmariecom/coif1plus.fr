@@ -72,7 +72,23 @@
         </p>
       </div>
       <a href="/img/front.jpg">
-        <img class="rounded-xl" src="/img/small/front.jpg" alt="Devanture" />
+        <picture>
+          <source
+            srcset="
+              /img/small/front.jpg 1000w,
+              /img/medium/front.jpg 1600w,
+              /img/large/front.jpg 2400w
+            "
+            sizes="(min-width: 768px) 50vw, 100vw"
+          />
+          <img
+            class="rounded-xl"
+            src="/img/front.jpg"
+            alt="Devanture"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       </a>
     </div>
     {% if page.url != "/" %}
