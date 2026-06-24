@@ -1,7 +1,10 @@
 {
+  "name": "coif1plus.fr",
+  "private": true,
   "license": "MIT",
+  "packageManager": "npm@11.17.0",
   "engines": {
-    "node": "24.4.1",
-    "npm": "11.4.2"
+    "node": "26.3.1",
+    "npm": "11.17.0"
   }
 }
